@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.title h1{
+    text-align: center;
+    color: palevioletred;
+    margin-bottom: 0;
+    font-family: "Courier New",serif;
+}
+.title p{
+    font-family: "Comic Sans MS", sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
+hr {
+    margin-top: 0;
+}
+.content h3{
+    color: palevioletred;
+    text-align: center;
+}
+.border{
+    background-color: pink;
+    margin-bottom: 40px;
+}
+.a{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.img{
+    text-align: center;
+    padding: 20px;
+}

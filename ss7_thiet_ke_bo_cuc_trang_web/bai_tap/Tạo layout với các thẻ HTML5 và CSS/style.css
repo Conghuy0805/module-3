@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+header {
+    background-color: orange;
+    min-height: 200px;
+}
+nav{
+    background-color: palegoldenrod;
+    min-height: 40px;
+}
+article{
+    float: left;
+    width: 70%;
+    background-color: palevioletred;
+    min-height: 400px;
+}
+
+aside{
+    float: left;
+    width: 30%;
+    background-color: purple;
+    min-height: 400px;
+}
+footer{
+    background-color: gray;
+    min-height: 100px;
+}
+.box-center{
+    width: 70%;
+    margin: 0 auto;
+}

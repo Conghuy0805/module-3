@@ -1,0 +1,12 @@
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p:nth-child(3){
+    text-transform: capitalize;
+}
+

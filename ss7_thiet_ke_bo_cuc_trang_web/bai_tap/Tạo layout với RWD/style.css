@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+hr{
+    margin-bottom: 20px;
+    border: none;
+    height: 2px;
+    background-color: rgb(0,0,0,0.2);
+    opacity: 0.5;
+}
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.main_menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 20px;
+    display: inline-block;
+}
+
+.main_menu li:hover {
+    background-color: black;
+    /*Mã CSS .main_menu li:hover { background-color: black; } được sử dụng để thay đổi màu nền của mục danh sách
+    khi người dùng di chuột lên mục đó (hover).*/
+}
+
+section {
+    width: 100%;
+}
+
+.main_1 {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}
+
+.main_1 ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main_1 li a {
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    color: blue;
+}
+
+.main_2 {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+.main_2 h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.main_2 p {
+    margin-left: 4px;
+    display: block;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+
+.main_2 div {
+    /*border-bottom: 2px solid #f1f1f1;*/
+}
+.main_3{
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+}
+.main_3 ul{
+    list-style: none;
+}
+.main_3-menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    display: block;
+    text-align: center;
+}
+.main_3-menu div{
+    padding: 20px 60px;
+}
+.main_3-menu div li{
+    border: 1px solid black;
+}
+footer{
+    text-align: center;
+    clear: both;
+    background-color: rgb(0,0,0,0.8);
+}
+footer p {
+    padding: 20px;
+    display: block;
+    color: white;
+}
+@media only screen and (min-width: 1100px) {
+    .main_1{
+        float: left;
+        width: 20%;
+        height: 500px;
+        background-color: #f1f1f1;
+    }
+    .main_2{
+        float: left;
+        width: 60%;
+        height: 500px;
+        padding: 15px;
+    }
+    .main_3 {
+        float: left;
+        width: 20%;
+        height: 500px;
+        background-color: #f1f1f1;
+    }
+}
+

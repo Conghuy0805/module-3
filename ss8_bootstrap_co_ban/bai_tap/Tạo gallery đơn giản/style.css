@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+/*div{*/
+/*    display: block;*/
+/*}*/
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.desc {
+    text-align: center;
+    padding: 15px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.paragraph {
+    clear: both;
+    padding: 6px;
+}
+
+@media screen and (min-width: 700px) {
+    .responsive {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}

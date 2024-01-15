@@ -1,0 +1,10 @@
+p {
+    margin-top: 0;
+    text-indent: 30px;
+    font-size: 20px;
+    line-height: 35px;
+    /* Căn khoảng cách giữa các dòng trong 1 đoạn văn vản */
+
+    letter-spacing: 1px;
+    /* Căn khoảng cách giữa các kí tự */
+}

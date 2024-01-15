@@ -1,0 +1,21 @@
+#p1{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: Arial,sans-serif;
+    font-weight: 500;
+}
+hr{
+    margin-top: 0;
+}
+h1{
+    margin-bottom: 0;
+}
+.box{
+    text-indent: 60px;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    line-height: 28px;
+}
+.blue{
+    color: #0000FF;
+}

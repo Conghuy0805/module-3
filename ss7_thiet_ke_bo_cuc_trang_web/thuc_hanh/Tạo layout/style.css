@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+    min-height: 500px;
+    /* Nếu nội dung nhỏ hơn chiều cao tối thiều thì chiều cao tối thiểu sẽ được áp dụng. Ví dụ ở đây là 500px */
+}
+
+#content {
+    flex-basis: 70%;
+}
+
+#sidebar {
+    flex-basis: 30%;
+}
+#footer{
+    background-color: gray;
+    padding: 15px;
+}

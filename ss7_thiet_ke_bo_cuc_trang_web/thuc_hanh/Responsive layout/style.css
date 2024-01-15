@@ -1,0 +1,42 @@
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header, #footer {
+    background: brown;
+    padding: 10px;
+    text-align: center;
+    color: yellow;
+}
+
+#wp-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+}
+
+#content, #sidebar {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#content {
+    flex-basis: 100%;
+    background: rgb(240, 239, 239);
+}
+
+#sidebar {
+    flex-basis: 100%;
+    color: #fff;
+}
+/* Thiết bị nhỏ, điện thoại nằm ngang, 576px trở lên */
+@media (min-width: 576px) {
+    #content {
+        flex-basis: 70%;
+    }
+
+    #sidebar {
+        flex-basis: 30%;
+    }
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table th, td{
+    padding: 6px 40px;
+    border: 2px solid beige;
+}
