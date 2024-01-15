@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../../" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss10_jsp_jstl/thuc_hanh/chuyen_doi_tien_te_jsp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss10_jsp_jstl/thuc_hanh/tu_dien_jsp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/bai_tap/product_discount_calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/thuc_hanh_chuyen_doi_tien_te" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/thuc_hanh_time" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/thuc_hanh_tu_dien" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ss9_tong_quan_ung_dung_web/thuc_hanh/thuc_hanh_web_hien_thi_loi_chao" vcs="Git" />
   </component>
 </project>
