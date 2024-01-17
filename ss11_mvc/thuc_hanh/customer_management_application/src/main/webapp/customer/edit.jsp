@@ -20,7 +20,7 @@
 <body>
 <h1>Edit customer</h1>
 <p>
-    <c:if test='${requestScope["message"]}'>
+    <c:if test='${requestScope["message"] != null}' >
         <span class="message">${requestScope["message"]}</span>
     </c:if>
 </p>

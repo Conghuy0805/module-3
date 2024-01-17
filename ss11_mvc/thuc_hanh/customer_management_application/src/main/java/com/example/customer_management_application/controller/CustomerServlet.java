@@ -3,6 +3,7 @@ package com.example.customer_management_application.controller;
 import com.example.customer_management_application.model.Customer;
 import com.example.customer_management_application.service.CustomerService;
 import com.example.customer_management_application.service.ICustomerService;
+import com.sun.javafx.iio.gif.GIFImageLoaderFactory;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -28,12 +29,33 @@ public class CustomerServlet extends HttpServlet {
                 showEditForm(request, response);
                 break;
             case "delete":
+                showDeleteForm(request, response);
                 break;
             case "view":
+                viewCustomer(request, response);
                 break;
             default:
                 listCustomer(request, response);
                 break;
+        }
+    }
+
+    private void showDeleteForm(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = iCustomerService.findById(id);
+        RequestDispatcher rd;
+        if (customer == null) {
+            rd = request.getRequestDispatcher("error-404.jsp");
+        } else {
+            request.setAttribute("customer", customer);
+            rd = request.getRequestDispatcher("customer/delete.jsp");
+        }
+        try {
+            rd.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -90,15 +112,50 @@ public class CustomerServlet extends HttpServlet {
             case "create":
                 createCustomer(request, response);
                 break;
-            case "eidt":
+            case "edit":
                 updateCustomer(request, response);
                 break;
             case "delete":
-                break;
-            case "view":
+                deleteCustomer(request, response);
                 break;
             default:
+                listCustomer(request, response);
                 break;
+        }
+    }
+
+    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = iCustomerService.findById(id);
+        RequestDispatcher rd;
+        if (customer == null) {
+            rd = request.getRequestDispatcher("error-404.jsp");
+        } else {
+            request.setAttribute("customer", customer);
+            rd = request.getRequestDispatcher("customer/view.jsp");
+        }
+        try {
+            rd.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Customer customer = iCustomerService.findById(id);
+        RequestDispatcher rd;
+        if (customer == null) {
+            rd = request.getRequestDispatcher("error-404.jsp");
+        } else {
+            iCustomerService.remove(id);
+            try {
+                response.sendRedirect("/customer");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
